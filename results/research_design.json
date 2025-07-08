@@ -1,0 +1,19 @@
+{
+  "target_asset": "2330.TW",
+  "study_period": {
+    "start": "2019-01-01",
+    "rationale": "涵蓋牛熊市完整週期，增強AP分解的統計顯著性"
+  },
+  "strategy_parameters": {
+    "monthly_investment": 1.0,
+    "momentum_lookback": 5,
+    "weight_scheme": {
+      "strong_up": 1.3,
+      "mild_up": 1.1,
+      "mild_down": 0.9,
+      "strong_down": 0.7,
+      "threshold": 0.05
+    }
+  },
+  "benchmark_risk_free_rate": 0.02
+}

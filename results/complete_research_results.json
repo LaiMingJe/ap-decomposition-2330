@@ -1,0 +1,90 @@
+{
+  "research_metadata": {
+    "title": "Active-Passive Decomposition in Dynamic Investment Strategies",
+    "theoretical_framework": "Lo (2007) AP Decomposition",
+    "academic_background": "Research Assistant Experience at Academia Sinica",
+    "research_period": {
+      "start": "2019-01-01",
+      "rationale": "涵蓋牛熊市完整週期，增強AP分解的統計顯著性"
+    }
+  },
+  "experimental_design": {
+    "target_asset": "2330.TW",
+    "study_period": {
+      "start": "2019-01-01",
+      "rationale": "涵蓋牛熊市完整週期，增強AP分解的統計顯著性"
+    },
+    "strategy_parameters": {
+      "monthly_investment": 1.0,
+      "momentum_lookback": 5,
+      "weight_scheme": {
+        "strong_up": 1.3,
+        "mild_up": 1.1,
+        "mild_down": 0.9,
+        "strong_down": 0.7,
+        "threshold": 0.05
+      }
+    },
+    "benchmark_risk_free_rate": 0.02
+  },
+  "empirical_results": {
+    "passive_strategy": {
+      "total_return": 1.517674204722852,
+      "annualized_return": 0.15909548526136286,
+      "annualized_volatility": 0.5760762435892934,
+      "sharpe_ratio": 0.2414532569416789,
+      "max_drawdown": -0.3609467056295132,
+      "win_rate": 0.5114213197969543,
+      "calmar_ratio": 0.4407727866192616,
+      "sortino_ratio": 0.764997695900792,
+      "var_95": -0.026091311040534138,
+      "max_consecutive_losses": 7
+    },
+    "active_strategy": {
+      "total_return": 7.375186002696095,
+      "annualized_return": 0.40470590711091536,
+      "annualized_volatility": 0.5785886512330795,
+      "sharpe_ratio": 0.6649039974963835,
+      "max_drawdown": -0.2358169786480779,
+      "win_rate": 0.508248730964467,
+      "calmar_ratio": 1.7161864655847334,
+      "sortino_ratio": 2.502851381579712,
+      "var_95": -0.023522412735466902,
+      "max_consecutive_losses": 7
+    },
+    "ap_decomposition": {
+      "Active (δp)": 0.0010428321588330423,
+      "Passive (νp)": 0.0013032816601219585,
+      "Active Ratio (θp)": 0.44449342159262234,
+      "Weight-Return Correlation": 0.3741658361233933,
+      "Sample Size": 1576,
+      "Statistical Significance": "High",
+      "Weight Mean": 1.0208121827411167,
+      "Weight Std": 0.15305136742236228,
+      "Return Mean": 0.0012767105273198698,
+      "Return Std": 0.018198576364108196
+    },
+    "ap_analysis": {
+      "active_contribution": 0.1929799382289424,
+      "active_volatility": 0.0639191954108819,
+      "information_ratio": 0.19018689713157716,
+      "positive_periods_ratio": 0.5911111111111111,
+      "maximum_active_drawdown": -0.04442858964502815,
+      "excess_return_skewness": 1.190828284077761,
+      "excess_return_kurtosis": 14.692965720293937,
+      "average_weight": 1.0208121827411167,
+      "weight_volatility": 0.15309994744816033,
+      "weight_range": [
+        0.7,
+        1.3
+      ],
+      "extreme_weight_frequency": 0.1732233502538071,
+      "weight_turnover": 0.07073015873015874
+    }
+  },
+  "key_findings": {
+    "excess_return": 5.857511797973244,
+    "active_value_creation": 0.44449342159262234,
+    "theoretical_validation": "Confirmed positive active component in momentum strategy"
+  }
+}
