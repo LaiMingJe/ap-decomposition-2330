@@ -1,0 +1,40 @@
+# Python 虛擬環境
+.venv/
+venv/
+
+# Python 編譯檔
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# VSCode/IDE 設定檔
+.vscode/
+.idea/
+
+# Mac 系統檔
+.DS_Store
+
+# 測試暫存檔
+*.log
+*.tmp
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+#輸出結果資料夾
+results/
+!results/ap_analysis/*.png
+!results/*.md
+!results/*.json
+
+# pyenv / pipenv
+.python-version
+Pipfile.lock
+
+# JetBrains PyCharm
+*.iml
+.idea/
+
+# cache
+.cache/
